@@ -90,7 +90,7 @@
 <meta property="og:description" content="搭建博客hexo 是一个快速、简介且高效的博客框架。使用GitHub Page能方便的部署静态网页。  超快速度 支持 Markdown 一键部署 插件丰富">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://i.loli.net/2019/03/09/5c839b210259e.png">
-<meta property="og:updated_time" content="2019-03-09T12:48:37.558Z">
+<meta property="og:updated_time" content="2019-03-09T13:06:40.770Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="搭建hexo博客">
 <meta name="twitter:description" content="搭建博客hexo 是一个快速、简介且高效的博客框架。使用GitHub Page能方便的部署静态网页。  超快速度 支持 Markdown 一键部署 插件丰富">
@@ -374,6 +374,16 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/03/09/搭建hexo博客/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/03/09/搭建hexo博客/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -454,6 +464,7 @@
 <h2 id="其它配置"><a href="#其它配置" class="headerlink" title="其它配置"></a>其它配置</h2><ul>
 <li><code>leancloud_visitors</code> 阅读次数统计</li>
 <li><code>baidu_analytics</code> 百度统计</li>
+<li><code>valine</code> valine评论</li>
 </ul>
 
       
@@ -522,6 +533,9 @@
 
           
 
+  
+    <div class="comments" id="comments">
+    </div>
   
 
 
@@ -836,6 +850,28 @@
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'x9CfMWiMQup1JeHBxl71v9kk-gzGzoHsz',
+        appKey: 'Qzev2vI41LGBOBSyQvCTIhua',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 
