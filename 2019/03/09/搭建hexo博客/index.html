@@ -90,7 +90,7 @@
 <meta property="og:description" content="搭建博客hexo 是一个快速、简介且高效的博客框架。使用GitHub Page能方便的部署静态网页。  超快速度 支持 Markdown 一键部署 插件丰富">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://i.loli.net/2019/03/09/5c839b210259e.png">
-<meta property="og:updated_time" content="2019-03-09T13:06:40.770Z">
+<meta property="og:updated_time" content="2019-03-10T01:52:54.280Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="搭建hexo博客">
 <meta name="twitter:description" content="搭建博客hexo 是一个快速、简介且高效的博客框架。使用GitHub Page能方便的部署静态网页。  超快速度 支持 Markdown 一键部署 插件丰富">
@@ -428,44 +428,49 @@
 </ul>
 <a id="more"></a>
 <h2 id="初始化项目"><a href="#初始化项目" class="headerlink" title="初始化项目"></a>初始化项目</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm i hexo-cli -g</span><br><span class="line">hexo init hexo-blog</span><br><span class="line">cd blog</span><br><span class="line">npm i</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure>
-<p>项目目录：</p>
-<p><img src="https://i.loli.net/2019/03/09/5c839b210259e.png" alt="项目目录"></p>
+<p>项目目录：<br><img src="https://i.loli.net/2019/03/09/5c839b210259e.png" alt="项目目录"></p>
 <h2 id="安装NexT主题"><a href="#安装NexT主题" class="headerlink" title="安装NexT主题"></a>安装NexT主题</h2><p><a href="http://theme-next.iissnan.com" target="_blank" rel="noopener">NexT</a> 精于心，简于行。</p>
 <ul>
 <li>一个主题，三种风格</li>
 <li>多语言支持</li>
 <li>可定制化程度高</li>
 </ul>
-<p>安装、配置的详细步骤：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd hexo-blog</span><br><span class="line">git clone https://github.com/iissnan/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure></p>
+<p>安装、配置的详细步骤：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd hexo-blog</span><br><span class="line">git clone https://github.com/iissnan/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
 <p>启用主题，编辑站点配置文件 <code>theme: next</code><br>可选的三种主题 <code>Muse</code>、<code>Mist</code>、<code>Pisces</code>，推荐<code>Pisces</code>，编辑主题配置文件 <code>scheme: Pisces</code><br>设置语言，编辑站点配置文件 <code>language: zh-Hans</code></p>
-<h2 id="基础配置"><a href="#基础配置" class="headerlink" title="基础配置"></a>基础配置</h2><p>编辑站点配置文件<br><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">title:</span> <span class="string">wuxie0ne's</span> <span class="string">blog</span></span><br><span class="line"><span class="attr">subtitle:</span> <span class="string">日拱一卒，功不唐捐</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">技术博客</span></span><br><span class="line"><span class="attr">keywords:</span></span><br><span class="line"><span class="attr">author:</span> <span class="string">wuxie0ne</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-Hans</span></span><br><span class="line"><span class="attr">timezone:</span> <span class="string">Asia/Shanghai</span></span><br></pre></td></tr></table></figure></p>
-<p>编辑主题配置文件<br><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">social:</span></span><br><span class="line">	<span class="attr">GitHub:</span> <span class="attr">https://github.com/wuxie0ne</span> <span class="string">||</span> <span class="string">github</span></span><br><span class="line">	<span class="attr">E-Mail:</span> <span class="attr">mailto:wuxie0ne@qq.com</span> <span class="string">||</span> <span class="string">envelope</span></span><br><span class="line"></span><br><span class="line"><span class="attr">social_icons:</span></span><br><span class="line">	<span class="attr">enable:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="基础配置"><a href="#基础配置" class="headerlink" title="基础配置"></a>基础配置</h2><p>编辑站点配置文件</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">title:</span> <span class="string">wuxie0ne's</span> <span class="string">blog</span></span><br><span class="line"><span class="attr">subtitle:</span> <span class="string">日拱一卒，功不唐捐</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">技术博客</span></span><br><span class="line"><span class="attr">keywords:</span></span><br><span class="line"><span class="attr">author:</span> <span class="string">wuxie0ne</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-Hans</span></span><br><span class="line"><span class="attr">timezone:</span> <span class="string">Asia/Shanghai</span></span><br></pre></td></tr></table></figure>
+<p>编辑主题配置文件</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">social:</span></span><br><span class="line"><span class="attr">  GitHub:</span> <span class="attr">https://github.com/wuxie0ne</span> <span class="string">||</span> <span class="string">github</span></span><br><span class="line"><span class="attr">  E-Mail:</span> <span class="attr">mailto:wuxie0ne@qq.com</span> <span class="string">||</span> <span class="string">envelope</span></span><br><span class="line"></span><br><span class="line"><span class="attr">social_icons:</span></span><br><span class="line"><span class="attr">  enable:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
 <h3 id="配置菜单"><a href="#配置菜单" class="headerlink" title="配置菜单"></a>配置菜单</h3><ul>
 <li>菜单位置，修改<code>sidebar.position</code>。</li>
-</ul>
-<ul>
 <li><p>例如：菜单增加<strong>归档</strong><br>  编辑主题配置文件</p>
-  <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr"> menu:</span> </span><br><span class="line"><span class="attr">home:</span> <span class="string">/</span></span><br><span class="line"><span class="attr">archives:</span> <span class="string">/archives/</span> <span class="string">||</span> <span class="string">archive</span></span><br><span class="line"><span class="attr"> menu_icons:</span></span><br><span class="line"><span class="attr">enable:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+  <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">menu:</span></span><br><span class="line"><span class="attr">  home:</span> <span class="string">/</span></span><br><span class="line"><span class="attr">  archives:</span> <span class="string">/archives/</span> <span class="string">||</span> <span class="string">archive</span></span><br><span class="line"><span class="attr">menu_icons:</span></span><br><span class="line"><span class="attr">  enable:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
 <p>  在项目目录下执行命令 <code>hexo new page archives</code> 添加<code>archives</code>页面<br>  编辑<code>./source/archives/index.md</code></p>
   <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: Archives</span><br><span class="line">type: "archives"</span><br><span class="line">date: 2019-03-09 16:49:29</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <h2 id="常用插件"><a href="#常用插件" class="headerlink" title="常用插件"></a>常用插件</h2><ul>
-<li><h3 id="hexo-generator-searchdb"><a href="#hexo-generator-searchdb" class="headerlink" title="hexo-generator-searchdb"></a><code>hexo-generator-searchdb</code></h3><p><code>hexo-generator-searchdb</code>是本地搜索插件，十分方便。<br>在项目目录下执行 <code>npm install hexo-generator-searchdb --save</code><br>编辑项目配置文件</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">search:</span></span><br><span class="line">	<span class="attr">path:</span> <span class="string">search.xml</span></span><br><span class="line">	<span class="attr">field:</span> <span class="string">post</span></span><br><span class="line">	<span class="attr">format:</span> <span class="string">html</span></span><br><span class="line">	<span class="attr">limit:</span> <span class="number">10000</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><h3 id="hexo-deployer-git"><a href="#hexo-deployer-git" class="headerlink" title="hexo-deployer-git"></a><code>hexo-deployer-git</code></h3><p><code>hexo-deployer-git</code>能够将项目方便的部署在Gethub Page上。<br>执行 <code>npm install hexo-deployer-git --save</code><br>编辑项目配置文件</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="attr">  type:</span> <span class="string">git</span></span><br><span class="line"><span class="attr">  repository:</span> <span class="string">git@github.com:wuxie0ne/wuxie0ne.github.io.git</span> <span class="comment"># ssh</span></span><br><span class="line"><span class="attr">  branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><h3 id="hexo-generator-feed"><a href="#hexo-generator-feed" class="headerlink" title="hexo-generator-feed"></a><code>hexo-generator-feed</code></h3><p><code>hexo-generator-feed</code>提供了RRS服务。<br>执行 <code>npm install hexo-generator-feed</code><br>编辑项目配置文件</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">feed:</span></span><br><span class="line"><span class="attr">  limit:</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure>
-</li>
+<li><h3 id="hexo-generator-searchdb"><a href="#hexo-generator-searchdb" class="headerlink" title="hexo-generator-searchdb"></a><code>hexo-generator-searchdb</code></h3></li>
 </ul>
+<p><code>hexo-generator-searchdb</code>是本地搜索插件，十分方便。<br>在项目目录下执行 <code>npm install hexo-generator-searchdb --save</code><br>编辑项目配置文件</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">search:</span></span><br><span class="line"><span class="attr">  path:</span> <span class="string">search.xml</span></span><br><span class="line"><span class="attr">  field:</span> <span class="string">post</span></span><br><span class="line"><span class="attr">  format:</span> <span class="string">html</span></span><br><span class="line"><span class="attr">  limit:</span> <span class="number">10000</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><h3 id="hexo-deployer-git"><a href="#hexo-deployer-git" class="headerlink" title="hexo-deployer-git"></a><code>hexo-deployer-git</code></h3></li>
+</ul>
+<p><code>hexo-deployer-git</code>能够将项目方便的部署在Gethub Page上。<br>执行 <code>npm install hexo-deployer-git --save</code><br>编辑项目配置文件</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="attr">  type:</span> <span class="string">git</span></span><br><span class="line"><span class="attr">  repository:</span> <span class="string">git@github.com:wuxie0ne/wuxie0ne.github.io.git</span> <span class="comment"># ssh</span></span><br><span class="line"><span class="attr">  branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><h3 id="hexo-generator-feed"><a href="#hexo-generator-feed" class="headerlink" title="hexo-generator-feed"></a><code>hexo-generator-feed</code></h3></li>
+</ul>
+<p><code>hexo-generator-feed</code>提供了RRS服务。<br>执行 <code>npm install hexo-generator-feed</code><br>编辑项目配置文件</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">feed:</span></span><br><span class="line"><span class="attr">  limit:</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure>
 <h2 id="其它配置"><a href="#其它配置" class="headerlink" title="其它配置"></a>其它配置</h2><ul>
 <li><code>leancloud_visitors</code> 阅读次数统计</li>
 <li><code>baidu_analytics</code> 百度统计</li>
 <li><code>valine</code> valine评论</li>
 </ul>
+<h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><p><code>hexo clean</code><br><code>hexo s</code><br><code>hexo d</code><br><code>hexo new &quot;一篇博客&quot;</code></p>
 
       
     </div>
@@ -505,6 +510,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/03/10/docker笔记/" rel="prev" title="docker笔记">
+                docker笔记 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -584,7 +593,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -595,7 +604,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -606,7 +615,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -662,7 +671,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#搭建博客"><span class="nav-number">1.</span> <span class="nav-text">搭建博客</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#初始化项目"><span class="nav-number">1.1.</span> <span class="nav-text">初始化项目</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装NexT主题"><span class="nav-number">1.2.</span> <span class="nav-text">安装NexT主题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#基础配置"><span class="nav-number">1.3.</span> <span class="nav-text">基础配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#配置菜单"><span class="nav-number">1.3.1.</span> <span class="nav-text">配置菜单</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常用插件"><span class="nav-number">1.4.</span> <span class="nav-text">常用插件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#hexo-generator-searchdb"><span class="nav-number">1.4.1.</span> <span class="nav-text">hexo-generator-searchdb</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hexo-deployer-git"><span class="nav-number">1.4.2.</span> <span class="nav-text">hexo-deployer-git</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hexo-generator-feed"><span class="nav-number">1.4.3.</span> <span class="nav-text">hexo-generator-feed</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其它配置"><span class="nav-number">1.5.</span> <span class="nav-text">其它配置</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#搭建博客"><span class="nav-number">1.</span> <span class="nav-text">搭建博客</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#初始化项目"><span class="nav-number">1.1.</span> <span class="nav-text">初始化项目</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装NexT主题"><span class="nav-number">1.2.</span> <span class="nav-text">安装NexT主题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#基础配置"><span class="nav-number">1.3.</span> <span class="nav-text">基础配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#配置菜单"><span class="nav-number">1.3.1.</span> <span class="nav-text">配置菜单</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常用插件"><span class="nav-number">1.4.</span> <span class="nav-text">常用插件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#hexo-generator-searchdb"><span class="nav-number">1.4.1.</span> <span class="nav-text">hexo-generator-searchdb</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hexo-deployer-git"><span class="nav-number">1.4.2.</span> <span class="nav-text">hexo-deployer-git</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hexo-generator-feed"><span class="nav-number">1.4.3.</span> <span class="nav-text">hexo-generator-feed</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其它配置"><span class="nav-number">1.5.</span> <span class="nav-text">其它配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常用命令"><span class="nav-number">1.6.</span> <span class="nav-text">常用命令</span></a></li></ol></li></ol></div>
             
 
           </div>
